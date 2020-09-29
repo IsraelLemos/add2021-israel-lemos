@@ -7,7 +7,7 @@
 - Conectar desde GNU/Linux Master hacia el Windows Slave.
 - Ir al servidor VNC y usar el comando netstat -n para ver las conexiones VNC con el cliente.
 
- ![2.1](/../add2021-israel-lemos/IntroducciónVNC/img/2.1.png)
+ ![2.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Introducci%C3%B3nVNC/img/2.1.PNG?raw=true)
 
 ## (4.1) Comprobaciones
 - Comprobaciones para verificar que se han establecido las conexiones remotas:
