@@ -2,8 +2,8 @@
 
 ## (2.1) Comprobaciones
 
-imagen
+![alt text](http://url/to/img.png)
 
 ## (4.1) Comprobaciones
 
-imagen
+![alt text](http://url/to/img.png)
