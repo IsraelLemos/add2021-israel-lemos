@@ -57,7 +57,7 @@ remota al servidor, y ahora ejecutamos APP1 de forma remota.
 
 
 
-#### 8.1 Restricción sobre un usuario
+### 8.1 Restricción sobre un usuario
 
 - Consultar/modificar fichero de configuración del servidor SSH
 `(/etc/ssh/sshd_config)` para restringir el acceso a determinados
@@ -73,7 +73,7 @@ ERROR).
 
 ![8.1.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/8.1.png?raw=true)
 
-#### 8.2 Restricción sobre una aplicación
+### 8.2 Restricción sobre una aplicación
 
 - Crear grupo `remoteapps`
     - En la captura no lo agrego pero antes de esa captura se ejecuta el comando `groupadd remoteapps` para crear dicho grupo por modo comando antes de nada.
