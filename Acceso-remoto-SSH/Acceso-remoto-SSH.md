@@ -10,105 +10,79 @@
 (SSH debe estar open). Debe mostrarnos que el puerto 22 está abierto.
 Debe aparecer una línea como "22/tcp open ssh".
 
-![2.2]( )
+![2.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/2.2.png?raw=true)
 
 
-- Si esto falla debemos comprobar en el servidor la configuración del
-cortafuegos.
-
-    Vamos a comprobar el funcionamiento de la conexión SSH desde cada
-cliente usando el usuario 1er-apellido-alumno1.
-
-- Desde el cliente GNU/Linux nos conectamos mediante ssh
-1er-apellido-alumno1@serverXXg. Capturar imagen del intercambio de
-claves que se produce en el primer proceso de conexión SSH.
-
-![2.2.1]( )
-
-- Si nos volvemos a conectar tendremos:
-
-![2.2.2]( )
-
-- Comprobar contenido del fichero `$HOME/.ssh/known_hosts `en el equipo
-cliente. OJO el prompt nos indica en qué equipo estamos.
-
-` `
-
-### (3.2) Comprobar cambio clave servidor SSH
-
-- Comprobar qué sucede al volver a conectarnos desde los dos clientes,
-usando los usuarios 1er-apellido-alumno2 y 1er-apellido-alumno1.
 
 ### (5 ) Autenticación mediante clave pública
 - Vamos a la máquina clientXXg.
 - Iniciamos sesión con nuestro el usuario nombre-alumno de la máquina
 clientXXg.
-`ssh-keygen -t` rsa para generar un nuevo par de claves para el usuario
+`ssh-keygen -t rsa` para generar un nuevo par de claves para el usuario
 en:
   - `/home/nombre-alumno/.ssh/id_rsa`
   - `/home/nombre-alumno/.ssh/id_rsa.pub`
 
-- Ahora vamos a copiar la clave pública (id_rsa.pub), al fichero
-"authorized_keys" del usuario remoto 1er-apellido-alumno4 que está
-definido en el servidor.
+![5](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/2.2.2.3.png?raw=true)
 
-  - Hay varias formas de hacerlo.
+
   - El modo recomendado es usando el comando `ssh-copy-id`. Ejemplo para
 copiar la clave pública del usuario actual al usuario remoto en la
 máquina remota: `ssh-copy-id 1er-apellido-alumno4@serverXXg`.
 
-- Comprobar que ahora al acceder remotamente vía SSH
-  - Desde `clientXXg`, NO se pide password.
-  - Desde `clientXXw`, SI se pide el password.
+![5.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/Captura%20de%20pantalla_2020-10-19_09-13-58.png?raw=true)
 
 ### (6 ) Uso de SSH como túnel para X
 
 - Modificar servidor SSH para permitir la ejecución de aplicaciones
 gráficas, desde los clientes. Consultar fichero de configuración`
-/etc/ssh/sshd_config` (Opción X11Forwarding yes)
-
+/etc/ssh/sshd_config` (Opción X11Forwarding yes)`
+![6](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/Captura%20de%20pantalla_2020-10-19_09-15-59.png?raw=true)
 - Reiniciar el servicio SSH para que se lean los cambios de
 configuración.
 
 Vamos a clientXXg.
 
 - `zypper se APP1`,comprobar que no está instalado el programa APP1.
+
+
+ ![6.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/6.1.png?raw=true)
+
 - Vamos a comprobar desde clientXXg, que funciona APP1(del servidor).
 `ssh -X primer-apellido-alumno1@serverXXg`, nos conectamos de forma
 remota al servidor, y ahora ejecutamos APP1 de forma remota.		
 
-### (8.1) Restricción sobre un usuario
+![6.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/6.2.png?raw=true)
+
+
+
 
 #### 8.1 Restricción sobre un usuario
-Vamos a crear una restricción de uso del SSH para un usuario:
-
-- En el servidor tenemos el usuario primer-apellido2. Desde local en el
-servidor podemos usar sin problemas el usuario.
-
-- Vamos a modificar SSH de modo que al usar el usuario por SSH desde los
-clientes tendremos permiso denegado.
-
-Capturar imagen de los siguientes pasos:
 
 - Consultar/modificar fichero de configuración del servidor SSH
 `(/etc/ssh/sshd_config)` para restringir el acceso a determinados
 usuarios. Consultar las opciones` AllowUsers, DenyUsers (Más información
 en: man sshd_config)`
 
+![8.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/Captura%20de%20pantalla_2020-10-19_10-13-50.png?raw=true)
+
+
 - `/usr/sbin/sshd -t; echo $?,` comprobar si la sintaxis del fichero de
 configuración del servicio SSH es correcta (Respuesta 0 => OK, 1 =>
 ERROR).
 
-- Comprobarlo la restricción al acceder desde los clientes.
+![8.1.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/8.1.png?raw=true)
 
 #### 8.2 Restricción sobre una aplicación
 
-- Vamos a crear una restricción de permisos sobre determinadas
-aplicaciones.
-
 - Crear grupo `remoteapps`
+    - En la captura no lo agrego pero antes de esa captura se ejecuta el comando `groupadd remoteapps` para crear dicho grupo por modo comando antes de nada.
+
+![8.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/8.2.png?raw=true)
+
 
 - Incluir al usuario `1er-apellido-alumno4 `en el grupo `remoteapps`.
+![2.2.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/8.2.1.png?raw=true)
 
 - Localizar el programa APP1. Posiblemente tenga permisos 755.
 
@@ -120,3 +94,5 @@ usuarios que no pertenezcan al grupo puedan ejecutar el programa.
 - Comprobamos el funcionamiento en el servidor en local.
 - Comprobamos el funcionamiento desde el cliente en remoto (Recordar
 `ssh -X ...`).
+
+![8.2.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Acceso-remoto-SSH/img/8.2.3.png?raw=true)
