@@ -1,0 +1,28 @@
+### 1.4 Configurar el servidor Samba
+Para instalar y configurar el servicio Samba, podemos usar comandos o el entorno gráfico. Como estamos en OpenSUSE vamos a usar Yast.
+
+ - cp /etc/samba/smb.conf /etc/samba/smb.conf.bak, hacer una copia de seguridad del fichero de configuración antes de modificarlo.
+ - Yast -> Samba Server
+ - Workgroup: curso2021.Sin controlador de dominio.
+ - En la pestaña de Inicio definimos
+Iniciar el servicio durante el arranque de la máquina.
+Ajustes del cortafuegos -> Abrir puertos
+Comprobar CORTAFUEGOS
+ -Para descartar un problema del servidor Samba con el cortafuegos, usaremos el comando nmap -Pn IP-servidor-Samba desde otra máquina GNU/Linux. Los puertos SMB/CIFS (139 y 445) deben estar abiertos.
+
+### 1.5 Crear los recursos compartidos de red
+Vamos a configurar los recursos compartidos de red en el servidor. Podemos hacerlo modificando el fichero de configuración o por entorno gráfico con Yast.
+
+Tenemos que conseguir una configuración con las secciones: global, public, barco, y castillo como la siguiente:
+Donde pone XX, sustituir por el número del puesto de cada uno.
+public, será un recurso compartido accesible para todos los usuarios en modo lectura.
+barco, recurso compartido de red de lectura/escritura para todos los piratas.
+castillo, recurso compartido de red de lectura/escritura para todos los soldados.
+Podemos modificar la configuración:
+(a) Editando directamente el ficher /etc/samba/smb.conf o
+(b) Yast -> Samba Server -> Recursos compartidos -> Configurar.
+
+
+
+testparm, verificar la sintaxis del fichero de configuración.
+more /etc/samba/smb.conf, consultar el contenido del fichero de configuración.
