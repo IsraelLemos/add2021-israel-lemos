@@ -1,0 +1,13 @@
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /                       btrfs  defaults                      0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /var                    btrfs  subvol=/@/var                 0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /usr/local              btrfs  subvol=/@/usr/local           0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /tmp                    btrfs  subvol=/@/tmp                 0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /srv                    btrfs  subvol=/@/srv                 0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /root                   btrfs  subvol=/@/root                0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /opt                    btrfs  subvol=/@/opt                 0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /home                   btrfs  subvol=/@/home                0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /boot/grub2/x86_64-efi  btrfs  subvol=/@/boot/grub2/x86_64-efi  0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /boot/grub2/i386-pc     btrfs  subvol=/@/boot/grub2/i386-pc  0  0
+UUID=af4466ab-0b78-4db2-82a8-25be36873b30  /.snapshots             btrfs  subvol=/@/.snapshots          0  0
+UUID=036f5f14-04fb-4f40-ba76-e562e4228313  swap                    swap   defaults                      0  0
+//172.19.6.31/public /mnt/remoto06/public cifs username=soldado1,password=Elpitufo3 0 0
