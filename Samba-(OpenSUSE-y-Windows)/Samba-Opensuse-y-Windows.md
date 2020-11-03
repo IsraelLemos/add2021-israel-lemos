@@ -14,7 +14,7 @@ Para instalar y configurar el servicio Samba, podemos usar comandos o el entorno
  Sin controlador de dominio.
 ![1.4.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/Captura%20de%20pantalla_2020-10-27_12-34-55.png?raw=true)
 
- - En la pestaña de Inicio definimos
+ - Comprobación del Cortafuegos. En la pestaña de Inicio definimos
 Iniciar el servicio durante el arranque de la máquina.
 Ajustes del cortafuegos -> Abrir puertos
 Comprobar CORTAFUEGOS
