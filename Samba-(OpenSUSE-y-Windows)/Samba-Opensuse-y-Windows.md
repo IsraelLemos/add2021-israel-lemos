@@ -1,31 +1,61 @@
 ### 1.4 Configurar el servidor Samba
 Para instalar y configurar el servicio Samba, podemos usar comandos o el entorno gráfico. Como estamos en OpenSUSE vamos a usar Yast.
 
- - cp /etc/samba/smb.conf /etc/samba/smb.conf.bak, hacer una copia de seguridad del fichero de configuración antes de modificarlo.
+ - _cp /etc/samba/smb.conf /etc/samba/smb.conf.bak_, hacer una copia de seguridad del fichero de configuración antes de modificarlo.
+
+ ![1.4.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/Captura%20de%20pantalla_2020-10-27_12-34-20.png?raw=true)
+
  - Yast -> Samba Server
- - Workgroup: curso2021.Sin controlador de dominio.
+
+ ![1.4.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/Captura%20de%20pantalla_2020-10-27_12-32-51.png?raw=true)
+
+
+ - Workgroup: curso2021.
+ Sin controlador de dominio.
+![1.4.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/Captura%20de%20pantalla_2020-10-27_12-34-55.png?raw=true)
+
  - En la pestaña de Inicio definimos
 Iniciar el servicio durante el arranque de la máquina.
 Ajustes del cortafuegos -> Abrir puertos
 Comprobar CORTAFUEGOS
+
+ ![1.4.4](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/Captura%20de%20pantalla_2020-10-27_12-35-29.png?raw=true)
+
+
+
  -Para descartar un problema del servidor Samba con el cortafuegos, usaremos el comando nmap -Pn IP-servidor-Samba desde otra máquina GNU/Linux. Los puertos SMB/CIFS (139 y 445) deben estar abiertos.
 
 ### 1.5 Crear los recursos compartidos de red
 
 
-Tenemos que conseguir una configuración con las secciones: global, public, barco, y castillo como la siguiente:
-Donde pone XX, sustituir por el número del puesto de cada uno.
-public, será un recurso compartido accesible para todos los usuarios en modo lectura.
-barco, recurso compartido de red de lectura/escritura para todos los piratas.
-castillo, recurso compartido de red de lectura/escritura para todos los soldados.
-Podemos modificar la configuración:
+- Tenemos que conseguir una configuración con las secciones: global, public, barco, y castillo como la siguiente:
+
+ - Donde pone XX, sustituir por el número del puesto de cada uno.
+
+ - public, será un recurso compartido accesible para todos los usuarios en modo lectura.
+
+ - barco, recurso compartido de red de lectura/escritura para todos los piratas.
+
+ - castillo, recurso compartido de red de lectura/escritura para todos los soldados.
+
+
+- Podemos modificar la configuración:
 (a) Editando directamente el ficher /etc/samba/smb.conf o
 (b) Yast -> Samba Server -> Recursos compartidos -> Configurar.
 
+ ![1.5.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/Captura%20de%20pantalla_2020-10-27_12-52-38.png?raw=true)
+
+ ![1.5.2]()
 
 
-testparm, verificar la sintaxis del fichero de configuración.
-more /etc/samba/smb.conf, consultar el contenido del fichero de configuración.
+- testparm, verificar la sintaxis del fichero de configuración.
+![1.5](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/Captura%20de%20pantalla_2020-10-27_12-53-44.png?raw=true)
+
+
+- more /etc/samba/smb.conf, consultar el contenido del fichero de configuración.
+
+
+![1.5]()
 
 
 ### 2.1 Cliente Windows GUI
