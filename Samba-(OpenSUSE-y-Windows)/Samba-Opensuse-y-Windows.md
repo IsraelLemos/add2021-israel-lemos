@@ -119,17 +119,35 @@ Capturar imagen de los siguientes comandos para comprobar los resultados:
 Pulsamos CTRL+L y escribimos smb://IP-SERVIDOR-SAMBA:
 ![3.1.0](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/3.1.png?raw=true)
 
-![3.1]()
+![3.1.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/3.1.5.PNG?raw=true)
 
 En el momento de autenticarse para acceder al recurso remoto, poner en Dominio el nombre-netbios-del-servidor-samba.
 
 Capturar imagen de lo siguiente:
 
 Probar a crear carpetas/archivos en castillo y en barco.
+![3.1.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/3.1.2.PNG?raw=true)
+
+
+
 Comprobar que el recurso public es de sólo lectura.
+
+![3.1.6]()
+
+
+
+
+
+
 Capturar imagen de los siguientes comandos para comprobar los resultados:
 smbstatus, desde el servidor Samba.
+
+![3.1.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/3.1.3.PNG?raw=true)
+
+
 sudo lsof -i, desde el servidor Samba.
+
+![3.1.4](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/3.1.4.PNG?raw=true)
 
 ### 3.2 Cliente GNU/Linux comandos
 Capturar imagenes de todo el proceso.
