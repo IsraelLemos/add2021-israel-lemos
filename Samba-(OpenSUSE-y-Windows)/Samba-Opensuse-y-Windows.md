@@ -100,31 +100,24 @@ Capturar imagen de los comandos siguientes:
 
 Montar el recurso barco de forma persistente.
 
-net use S: \\IP-SERVIDOR-SAMBA\recurso contraseña /USER:usuario /p:yes crear una conexión con el recurso compartido y lo monta en la unidad S.Con la opción /p:yes hacemos el montaje persistente. De modo que se mantiene en cada reinicio de máquina.
-![2.2.2]()
-net use, comprobamos.
-![2.2.3]()
+- net use S: \\IP-SERVIDOR-SAMBA\recurso contraseña /USER:usuario /p:yes crear una conexión con el recurso compartido y lo monta en la unidad S.Con la opción /p:yes hacemos el montaje persistente. De modo que se mantiene en cada reinicio de máquina.
 
-
-
+ ![2.2.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/2.2.2.PNG?raw=true)
+- net use, comprobamos.
+ ![2.2.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/2.2.3.PNG?raw=true)
 
 Capturar imagen de los siguientes comandos para comprobar los resultados:
-smbstatus, desde el servidor Samba.
-lsof -i, desde el servidor Samba.
+- smbstatus, desde el servidor Samba.
+- lsof -i, desde el servidor Samba.
 
-![2.2.4]()
+![2.2.4](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/2.2.4.PNG?raw=true)
 
 
 
 
 ### 3.1 Cliente GNU/Linux GUI
-Desde en entorno gráfico, podemos comprobar el acceso a recursos compartidos SMB/CIFS.
-
-Algunas herramientas para acceder a recursos Samba por entorno gráfico: Yast en OpenSUSE, Nautilus en GNOME, Konqueror en KDE, En Ubuntu podemos ir a "Lugares -> Conectar con el servidor...", También podemos instalar "smb4k".
-
-Ejemplo accediendo al recurso prueba del servidor Samba, pulsamos CTRL+L y escribimos smb://IP-SERVIDOR-SAMBA:
-
-linux-gui-client
+Pulsamos CTRL+L y escribimos smb://IP-SERVIDOR-SAMBA:
+![3.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/3.1.png?raw=true)
 
 En el momento de autenticarse para acceder al recurso remoto, poner en Dominio el nombre-netbios-del-servidor-samba.
 
