@@ -117,7 +117,9 @@ Capturar imagen de los siguientes comandos para comprobar los resultados:
 
 ### 3.1 Cliente GNU/Linux GUI
 Pulsamos CTRL+L y escribimos smb://IP-SERVIDOR-SAMBA:
-![3.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/3.1.png?raw=true)
+![3.1.0](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Samba-(OpenSUSE-y-Windows)/img/3.1.png?raw=true)
+
+![3.1]()
 
 En el momento de autenticarse para acceder al recurso remoto, poner en Dominio el nombre-netbios-del-servidor-samba.
 
