@@ -11,11 +11,15 @@ Para crear un archivo PDF no hará falta que cambies la aplicación que estés u
 
 Puedes probar la nueva impresora abriendo el Bloc de notas y creando un fichero luego selecciona imprimir. Cuando finalice el proceso se abrirá un fichero PDF con el resultado de la impresión.
 
-Probar la impresora remota imprimiendo documento imprimirXXs-local.
+- Probar la impresora remota imprimiendo documento imprimirXXs-local.
 
-  ![1.3]()
-  ![1.3.1]()
-  ![1.3.2]()
+  ![1.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-4.PNG?raw=true)
+
+  ![1.3.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-5.PNG?raw=true)
+
+  ![1.3.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-6.PNG?raw=true)
+
+  ![1.3.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-7.PNG?raw=true)
 
 
 
@@ -32,11 +36,13 @@ Vamos al cliente:
  ![2.2.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura%20de%20pantalla_2020-11-06_10-36-10.png?raw=true
 )
 
-
-
   - Ponemos usuario/clave del Windows Server.
 - Ya tenemos la impresora remota configurada en el cliente.
 - Probar la impresora remota imprimiendo documento _imprimirXXw-remoto_.
+
+ ![2.2.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura.PNG?raw=true)
+
+ ![2.2.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-2.PNG?raw=true)
 
 ## 3.3 Comprobar desde el navegador
 
@@ -55,16 +61,18 @@ Vamos a realizar seguidamente una prueba sencilla en tu impresora de red:
 - Ir a MV cliente.
 - Probar la impresora remota imprimiendo documento imprimirXXw-web.
 
- ![3.3.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura.PNG?raw=true)
+  ![3.3.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-10.PNG?raw=true)
 
- ![3.3.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-2.PNG?raw=true)
+  ![3.3.4](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-11.PNG?raw=true)
+
+
 
   - Comprobar que al estar la impresora en pausa, el trabajo aparece en cola de impresión.
 
-
+  ![3.3.6](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-8.PNG?raw=true)
 
 - Finalmente pulsa en reanudar el trabajo para que tu documento se convierta a PDF.
 
-![3.3.4](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-3.PNG?raw=true)
+ ![3.3.4](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-9.PNG?raw=true)
 
-![3.3.5](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura%20de%20pantalla_2020-11-10_12-21-34.png?raw=true)
+ ![3.3.5](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura%20de%20pantalla_2020-11-10_12-21-34.png?raw=true)
