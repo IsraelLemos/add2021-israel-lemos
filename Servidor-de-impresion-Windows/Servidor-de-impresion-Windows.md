@@ -1,8 +1,8 @@
-Nota:
-  Ip de casa-> 192.168.0.90=server06w
-  Ip de casa-> 192.168.0.91=client06w
-  Ip de clase-> 172.19.6.=server06w
-  Ip de clase-> 172.19.6.=client06w
+- Nota:
+  - Ip de casa-> 192.168.0.90=server06w
+  - Ip de casa-> 192.168.0.91=client06w
+  - Ip de clase-> 172.19.6.=server06w
+  - Ip de clase-> 172.19.6.=client06w
 
 
 
@@ -12,6 +12,11 @@ Para crear un archivo PDF no hará falta que cambies la aplicación que estés u
 Puedes probar la nueva impresora abriendo el Bloc de notas y creando un fichero luego selecciona imprimir. Cuando finalice el proceso se abrirá un fichero PDF con el resultado de la impresión.
 
 Probar la impresora remota imprimiendo documento imprimirXXs-local.
+
+  ![1.3]()
+  ![1.3.1]()
+  ![1.3.2]()
+
 
 
 ## 2.2 Comprobar desde el cliente
@@ -38,13 +43,28 @@ Vamos al cliente:
 Vamos a realizar seguidamente una prueba sencilla en tu impresora de red:
 
 - Accede a la configuración de la impresora a través del navegador.
+
+ ![3.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura%20de%20pantalla_2020-11-10_12-20-36.png?raw=true)
+
 - Poner en pausa los trabajos de impresión de la impresora.
+
+ ![3.3.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura%20de%20pantalla_2020-11-10_12-21-34.png?raw=true)
+
+ ![3.3.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-1.PNG?raw=true)
+
 - Ir a MV cliente.
 - Probar la impresora remota imprimiendo documento imprimirXXw-web.
-  - Comprobar que al estar la impresora en pausa, el trabajo aparece en cola de impresión.
-- Finalmente pulsa en reanudar el trabajo para que tu documento se convierta a PDF.
-- Si tenemos problemas para que aparezca el PDF en el servidor, iniciar el programa PDFCreator y esperar un poco.
 
-Si hay problemas para acceder a la impresora de red desde el cliente Windows entonces:
-- Revisar la configuración de red de la máquina (Incluido la puerta de enlace)
-- Reiniciar el servidor Windows Server que contiene la impresora compartida de red.
+ ![3.3.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura.PNG?raw=true)
+
+ ![3.3.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-2.PNG?raw=true)
+
+  - Comprobar que al estar la impresora en pausa, el trabajo aparece en cola de impresión.
+
+
+
+- Finalmente pulsa en reanudar el trabajo para que tu documento se convierta a PDF.
+
+![3.3.4](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-3.PNG?raw=true)
+
+![3.3.5](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura%20de%20pantalla_2020-11-10_12-21-34.png?raw=true)
