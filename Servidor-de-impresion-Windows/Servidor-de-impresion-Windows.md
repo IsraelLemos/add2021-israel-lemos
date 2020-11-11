@@ -1,3 +1,11 @@
+Nota:
+  Ip de casa-> 192.168.0.90=server06w
+  Ip de casa-> 192.168.0.91=client06w
+  Ip de clase-> 172.19.6.=server06w
+  Ip de clase-> 172.19.6.=client06w
+
+
+
 ## 1.3 Probar la impresora en local
 Para crear un archivo PDF no hará falta que cambies la aplicación que estés usando, simplemente ve a la opción de imprimir y selecciona "Impresora PDF", en segundos tendrás creado tu archivo PDF.
 
@@ -10,7 +18,17 @@ Probar la impresora remota imprimiendo documento imprimirXXs-local.
 Vamos al cliente:
 
 - Buscar recursos de red del servidor. Si tarda en aparecer ponemo  _\\ip-del-servidor_ en la barra de navegación.
+
+ ![2.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura%20de%20pantalla_2020-11-06_10-35-08.png?raw=true)
 - Seleccionar impresora -> botón derecho -> conectar.
+
+ ![2.2.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura%20de%20pantalla_2020-11-06_10-35-40.png?raw=true)
+
+ ![2.2.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura%20de%20pantalla_2020-11-06_10-36-10.png?raw=true
+)
+
+
+
   - Ponemos usuario/clave del Windows Server.
 - Ya tenemos la impresora remota configurada en el cliente.
 - Probar la impresora remota imprimiendo documento _imprimirXXw-remoto_.
