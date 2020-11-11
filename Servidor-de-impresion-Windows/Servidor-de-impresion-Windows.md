@@ -1,10 +1,10 @@
+# Servidor impresión Windows
+
 - Nota:
   - Ip de casa-> 192.168.0.90=server06w
   - Ip de casa-> 192.168.0.91=client06w
   - Ip de clase-> 172.19.6.=server06w
   - Ip de clase-> 172.19.6.=client06w
-
-
 
 ## 1.3 Probar la impresora en local
 Para crear un archivo PDF no hará falta que cambies la aplicación que estés usando, simplemente ve a la opción de imprimir y selecciona "Impresora PDF", en segundos tendrás creado tu archivo PDF.
@@ -44,6 +44,8 @@ Vamos al cliente:
 
  ![2.2.3](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-2.PNG?raw=true)
 
+ ![2.2.4](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-12.PNG?raw=true)
+
 ## 3.3 Comprobar desde el navegador
 
 Vamos a realizar seguidamente una prueba sencilla en tu impresora de red:
@@ -58,6 +60,8 @@ Vamos a realizar seguidamente una prueba sencilla en tu impresora de red:
 
  ![3.3.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-1.PNG?raw=true)
 
+
+
 - Ir a MV cliente.
 - Probar la impresora remota imprimiendo documento imprimirXXw-web.
 
@@ -65,7 +69,7 @@ Vamos a realizar seguidamente una prueba sencilla en tu impresora de red:
 
   ![3.3.4](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-11.PNG?raw=true)
 
-
+  ![3.3.7](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Servidor-de-impresion-Windows/img/Captura-13.PNG?raw=true)
 
   - Comprobar que al estar la impresora en pausa, el trabajo aparece en cola de impresión.
 
