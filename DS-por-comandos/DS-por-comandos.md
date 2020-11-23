@@ -38,10 +38,9 @@ changetype: delete_
 - Ir a la MV cliente LDAP.
 - _nmap -Pn IP-LDAP-SERVER_, comprobar que el puerto LDAP del servidor está abierto. Si no aparecen los puertos abiertos, entonces revisar el cortafuegos.
 
-
-
-
-
+ ![4.3.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/DS-por-comandos/img/Captura-6.PNG?raw=true)
 
 
 - _ldapsearch -H ldap://IP-LDAP-SERVER -W -D "cn=Directory Manager" -b "dc=ldapXX,dc=curso2021" "(uid=*)" | grep dn_ para consultar los usuarios LDAP que tenemos en el servicio de directorio remoto.
+
+ ![4.3.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/DS-por-comandos/img/Captura-7.PNG?raw=true)
