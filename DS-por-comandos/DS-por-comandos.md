@@ -20,7 +20,6 @@
 ![3.3.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/DS-por-comandos/img/Captura%20de%20pantalla_2020-11-18_10-20-45.png?raw=true)
 ![3.3.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/DS-por-comandos/img/Captura%20de%20pantalla_2020-11-18_10-20-57.png?raw=true)
 
-
 - Crear un archivo _mazinger-delete.ldif_ :
 _dn: uid=mazinger,ou=people,dc=ldapXX,dc=curso2021
 changetype: delete_
