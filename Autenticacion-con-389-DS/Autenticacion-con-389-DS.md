@@ -12,7 +12,7 @@
 - Ir a MV cliente.
   - nmap -Pn IP-LDAP-SERVERXX | grep -P '389|636', para comprobar que el servidor LDAP es accesible desde la MV2 cliente.
 
-   ![1.1]()
+   ![1.1](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Autenticacion-con-389-DS/img/Captura-2.PNG?raw=true)
 
   - ldapsearch -H ldap://IP-LDAP-SERVERXX:389 -W -D "cn=Directory Manager" -b "dc=ldapXX,dc=curso2021" "(uid=*)" | grep dn, comprobamos que los usuarios del LDAP remoto son visibles en el cliente.
 
