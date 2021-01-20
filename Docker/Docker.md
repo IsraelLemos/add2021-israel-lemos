@@ -11,10 +11,6 @@ docker ps, nos muestra los contenedores en ejecución.Podemos apreciar que la ú
 - Abrir navegador web y poner URL 0.0.0.0.:PORT. De esta forma nos conectaremos con el servidor Nginx que se está ejecutando dentro del contenedor.
  ![3.2.2](https://github.com/IsraelLemos/add2021-israel-lemos/blob/master/Docker/img/Captura%20de%20pantalla_2021-01-11_10-39-34.png?raw=true)
 
-- Comprobar el acceso a holamundo1.html.
- ![3.2.3]()
-
-
 
 ### 3.3 Migrar la imagen a otra máquina
 
@@ -47,11 +43,6 @@ El fichero Dockerfile contiene toda la información necesaria para construir el 
 
 ### 4.3 Crear contenedor y comprobar
 
-A continuación vamos a crear un contenedor con el nombre app4nginx2, a partir de la imagen nombre-alumno/nginx2. Probaremos con:
-
-- docker run --name=app4nginx2 -p 8082:80 -t nombre-alumno/nginx2
-
-![4.3.1]()
 
 Desde otra terminal:
 - docker ps, para comprobar que el contenedor está en ejecución y en escucha por el puerto deseado.
